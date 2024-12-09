@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.rizki.crud_data_mysql_mi2b"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.rizki.crud_data_mysql_mi2b"
@@ -36,6 +36,13 @@ android {
 }
 
 dependencies {
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    //Interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
